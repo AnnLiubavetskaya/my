@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>самому милому котенку на свете</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        #message {
+            display: none;
+            margin-top: 20px;
+            font-size: 24px;
+            color: #ff69b4;
+            animation: fadeIn 2s;
+        }
+        #image {
+            display: none;
+            margin-top: 20px;
+            width: 200px;
+            height: auto;
+            border: 2px solid #ff69b4;
+            border-radius: 10px;
+            animation: fadeIn 2s;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #ff1493;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+<a href="#" class="btn" onclick="showContent()">Нажми на меня</a>
+
+<p id="message">Безумно люблю тебя, котенок!</p>
+<img id="image" src="милая пикча _ котёнок _ пикча с котиком _ милая картинка _ картинка.jpeg" alt="Котенок">
+
+<script>
+    function showContent() {
+        document.getElementById('message').style.display = 'block';
+        document.getElementById('image').style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
